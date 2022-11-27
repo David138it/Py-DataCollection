@@ -58,8 +58,8 @@ class mywindow(QtWidgets.QMainWindow):
             #Считываем файл template, и меняем значения
             with open(r'template.txt', 'r') as oFile:
                 rFile = oFile.read()
-                for key, value in dictionary.items():
-                    rFile = rFile.replace(key, str(value))
+                for key, val in dictionary.items():
+                    rFile = rFile.replace(key, str(val))
             #print(rFile) 
             #Запишем изменения в файл output
             with open(r'output.txt', 'a') as wFile:
